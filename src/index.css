@@ -1,3 +1,144 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    @apply p-0 m-0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.dashborad_wrap {
+    @apply overflow-hidden;
+}
+.dashborad_row {
+    @apply flex;
+}
+
+/*--- Sidebar CSS Start ---*/
+.side_bar {
+    @apply w-[212px] flex-[0_0_212px] h-screen bg-white border-r border-gray-300 py-6 pl-6 pr-4;
+}
+.profile {
+    @apply flex items-center mb-6;
+}
+.profile .avatar {
+    @apply w-6 h-6 rounded-full overflow-hidden;
+}
+.profile-name {
+    @apply text-sm text-[#1C1C1C] leading-normal pl-2 inline-block;
+}
+.side_bar_title{
+    @apply flex items-center ;
+
+}
+.side_bar_title span{
+    @apply text-sm font-normal leading-normal text-[#000] text-opacity-20;
+    
+}
+.side_bar_item li a{
+    @apply text-sm font-normal leading-normal text-[#1C1C1C]
+}
+.dashboard_dropdown h3{
+    @apply text-sm font-normal leading-normal text-[#000] text-opacity-20 mb-3;
+}
+.dropdown h5{
+    @apply text-sm font-normal leading-normal text-[#1C1C1C]
+}
+.dropdown-list {
+    @apply hidden;
+    transition: 0.35s all ease;
+}
+.dropdown.show .dropdown-list {
+    @apply block;
+}
+.dropdown-list li {
+    @apply mb-2;
+}
+.dropdown-list li a {
+    @apply text-sm font-normal leading-normal text-[#1C1C1C] w-full p-1 relative rounded-[8px] inline-block hover:bg-[#000] hover:bg-opacity-[0.05] before:content-[''] before:inline-block before:w-[5px] before:h-4 before:bg-[#1C1C1C] before:absolute before:left-[1px] before:top-[5px] before:rounded-[8px] before:opacity-0 hover:before:opacity-100; 
+}
+.dropdown-label {
+    @apply cursor-pointer mb-2;
+}
+.dropdown-label>img {
+    @apply rotate-0;
+    transition: 0.35s all ease;
+}
+.dropdown.show>.dropdown-label>img {
+    @apply rotate-[90deg];
+}
+/*--- Sidebar CSS End ---*/
+
+.dashboard_main {
+    @apply w-full overflow-auto h-screen;
+}
+.header {
+    @apply border-b border-gray-100
+}
+.nav-bar-left ul li{
+    @apply mr-5
+}
+.nav-bar-right ul li{
+    @apply ml-5
+}
+.search-bar input{
+    @apply h-7 text-sm font-normal leading-normal bg-[#000] bg-opacity-5 rounded-lg pl-6 pr-2
+}
+/*-----------dashboard_tab-----*/
+.dashboard_tab .tab_list ul li{
+    @apply mr-5
+}
+.dashboard_tab .tab_list ul li a{
+    @apply text-sm font-normal leading-normal text-[#1C1C1C] text-opacity-20
+}
+.dashboard_tab .tab_list ul li a.active{
+    @apply text-[#1C1C1C]
+}
+.dashboard_tab .tab_button ul li{
+    @apply ml-5
+}
+.dashboard_tab .tab_button ul li a{
+    @apply text-sm font-normal leading-normal text-[#1C1C1C] text-opacity-20
+}
+
+.dashboard_content_list ul li{
+    @apply pr-6 border-r pl-6 
+}
+.dashboard_content_list ul li:first-child{
+    @apply pl-0
+}
+.dashboard_content_list ul li p{
+    @apply text-sm font-normal leading-normal text-[#1C1C1C]
+}
+.dashboard_content_list ul li h4{
+    @apply text-lg font-medium text-[#1C1C1C]
+}
+
+/*-----------notifications_bar-----*/
+.notifications_bar {
+    @apply w-[280px] flex-[0_0_280px] h-screen bg-white border-l border-gray-300 p-6 overflow-auto;
+}
+.notifications_bar h5 {
+    @apply text-sm text-[#1C1C1C] font-semibold leading-normal mb-5;
+}
+.notification-col {
+    @apply mb-4;
+}
+.notification {
+    @apply flex mb-4;
+}
+.notification .icon {
+    @apply w-6 h-6 flex-[0_0_24px] rounded-[8px] bg-[#E3F5FF] flex items-center justify-center;
+}
+.notification-info {
+    @apply pl-2;
+}
+.notification p {
+    @apply text-sm text-[#1C1C1C] leading-normal whitespace-nowrap overflow-hidden overflow-ellipsis w-[200px];
+}
+.notification span {
+    @apply text-xs text-[#1C1C1C] leading-normal mb-1 text-gray-200;
+}
+/*-----------notifications_bar-----*/

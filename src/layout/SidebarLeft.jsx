@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { GoPrimitiveDot } from "react-icons/go";
-import { FaGreaterThan } from "react-icons/fa";
 import { GrPieChart } from "react-icons/gr";
 import { FiShoppingBag } from "react-icons/fi";
 import { BsFolder } from "react-icons/bs";
@@ -23,7 +22,7 @@ const SidebarLeft = () => {
   };
 
   return (
-    <aside className="justify-star w-full flex-wrap md:w-1/4 bg-white overflow-hidden border border-r-gray-200 rounded-l-2xl">
+    <aside className="font-medium text-sm w-full flex-wrap md:w-2/12 bg-white border-r border-r-gray-200 rounded-l-2xl h-screen overflow-y-auto">
       <div className="m-6">
         <span className="flex ">
           <img
@@ -33,12 +32,12 @@ const SidebarLeft = () => {
             }
             alt="Rounded avatar"
           />
-          <p className="text-lg font-semibold  my-auto pl-2">ByeWind</p>
+          <p className=" font-semibold  my-auto pl-2">ByeWind</p>
         </span>
         <div className="pb-4">
           <span className="flex text-center justify-evenly py-4">
-            <p className="font-lg text-gray-400 width-full">Favorites</p>
-            <p className="font-lg text-gray-400 width-full">Recently</p>
+            <p className=" text-gray-400 width-full">Favorites</p>
+            <p className=" text-gray-400 width-full">Recently</p>
           </span>
           <ul>
             <li className="flex">

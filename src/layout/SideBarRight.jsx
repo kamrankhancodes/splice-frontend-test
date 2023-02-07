@@ -2,7 +2,7 @@ import React from 'react'
 
 const SideBarRight = () => {
     return (
-        <div className=' w-full md:w-1/4'>SideBarRight
+        <div className=' w-full md:w-2/12'>SideBarRight
 {/* 
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
                 <AccordionHeader onClick={() => handleOpen(1)}>

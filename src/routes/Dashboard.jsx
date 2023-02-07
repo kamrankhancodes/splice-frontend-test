@@ -5,14 +5,12 @@ import SideBarRight from '../layout/SideBarRight'
 
 const Dashboard = () => {
   return (
-    <div className=' flex flex-wrap bg-gray-200'>
-      <div className='w-full p-4 m-6 rounded-2xl'>
+      <div className='flex flex-wrap w-full md:h-screen md:overflow-hidden'>
 
       <SidebarLeft />
       <MainBody />
       <SideBarRight />
       </div>
-    </div>
   )
 }
 
