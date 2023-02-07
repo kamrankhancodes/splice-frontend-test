@@ -3,10 +3,11 @@ import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { BsPlusLg } from "react-icons/bs";
 import CoffeeDetail from "../components/CoffeeDetail.component";
 import Header from "../components/Header.component";
+import ProjectSpending from "../components/ProjectSpending.component";
 
 const MainBody = () => {
   return (
-    <div className="w-full md:w-7/12">
+    <div className="w-full md:w-7/12 md:h-screen overflow-y-scroll">
       <Header />
       <div className="p-6">
         <div className="dashboard_tab flex items-center justify-between">
@@ -57,6 +58,7 @@ const MainBody = () => {
           </div>
         </div>
       < CoffeeDetail />
+      < ProjectSpending />
       </div>
     </div>
   );
