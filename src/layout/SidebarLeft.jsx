@@ -7,7 +7,7 @@ import { BsFolder } from "react-icons/bs";
 import { SlBookOpen } from "react-icons/sl";
 import { IoIdCardOutline } from "react-icons/io5";
 import { RxIdCard } from "react-icons/rx";
-import { IoIosPeople } from "react-icons/io";
+import { IoIosPeople, IoIosArrowForward } from "react-icons/io";
 import { TbNews } from "react-icons/tb";
 import { RiWechatLine } from "react-icons/ri";
 
@@ -23,7 +23,7 @@ const SidebarLeft = () => {
   };
 
   return (
-    <aside className="justify-star font-semibold w-full flex-wrap md:w-1/4 bg-white overflow-hidden border border-r-gray-200 rounded-l-2xl">
+    <aside className="justify-star w-full flex-wrap md:w-1/4 bg-white overflow-hidden border border-r-gray-200 rounded-l-2xl">
       <div className="m-6">
         <span className="flex ">
           <img
@@ -65,60 +65,104 @@ const SidebarLeft = () => {
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Default")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                 
                 />
                 <span className="flex">
                   <GrPieChart className="my-auto mr-1" />
                   Default
                 </span>
               </div>
+              {selectedLink === "Default" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
             <li>
               <div
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("eCommerce")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2 "
-                  size={10}
+                  
                 />
                 <span className="flex">
                   <FiShoppingBag className="my-auto mr-1" />
                   eCommerce
                 </span>
               </div>
+              {selectedLink === "eCommerce" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
             <li>
               <div
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Projects")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
                 <span className="flex">
                   <BsFolder className="my-auto mr-1" />
                   Projects
                 </span>
               </div>
+              {selectedLink === "Projects" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
             <li>
             <div
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Online Courses")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
                 <span className="flex">
                   <SlBookOpen className="my-auto mr-1" />
                   Online Courses
                 </span>
               </div>
+              {selectedLink === "Online Courses" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
           </ul>
         </div>
@@ -127,14 +171,14 @@ const SidebarLeft = () => {
           <ul>
             <li className="flex flex-wrap mb-2">
               <span
-                className="flex"
+                className="flex cursor-pointer"
                 onClick={() => showAccordion("User Profile")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
-                <IoIdCardOutline className="my-auto mr-1 cursor-pointer" />
+                <IoIdCardOutline className="my-auto mr-1 " />
                 User Profile
               </span>
               {selectedLink === "User Profile" && displayAccordion === true && (
@@ -162,52 +206,96 @@ const SidebarLeft = () => {
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Account")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
                 <RxIdCard className="my-auto mr-1" />
                 Account
               </div>
+              {selectedLink === "Account" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
             <li>
             <div
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Corporate")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
                 <IoIosPeople className="my-auto mr-1" />
                 Corporate
               </div>
+              {selectedLink === "Corporate" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
             <li>
             <div
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Blog")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
                 <TbNews className="my-auto mr-1" />
                 Blog
               </div>
+              {selectedLink === "Blog" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
             <li>
             <div
                 className="flex mb-2 cursor-pointer"
                 onClick={() => showAccordion("Social")}
               >
-                <FaGreaterThan
+                <IoIosArrowForward
                   className="text-gray-400 my-auto mr-2"
-                  size={10}
+                  
                 />
                 <RiWechatLine className="my-auto mr-1" />
                 Social
               </div>
+              {selectedLink === "Social" && displayAccordion === true && (
+                <ul className=" w-full mx-auto">
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                    placeholder 1
+                  </li>
+                  <li className="pl-9 my-1 hover:bg-gray-200 rounded hover:border-2 hover:border-l-black cursor-pointer">
+                  placeholder 2
+                  </li>
+                  
+                </ul>
+              )}
             </li>
           </ul>
         </div>
