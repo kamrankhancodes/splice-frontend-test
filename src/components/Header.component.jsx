@@ -5,10 +5,10 @@ import { GrNotification } from "react-icons/gr"
 
 const Header = ()=>{
     return(
-        <header class=" text-sm header flex flex-wrap items-center px-8 py-6 justify-between w-full">
+        <header className=" text-sm header flex flex-wrap items-center px-8 py-6 justify-between w-full">
 
-            <div class="nav-bar-left flex items-center">
-              <ul class="flex items-center">
+            <div className="nav-bar-left flex items-center">
+              <ul className="flex items-center">
                 <li>
                   < BsLayoutSidebar />
                 </li>
@@ -20,14 +20,14 @@ const Header = ()=>{
                 <li><a href="/">Default</a></li>
               </ul>
             </div>
-            <div class="nav-bar-right flex items-center">
-              <ul class="flex items-center">
-                <li class="flex items-center relative search-bar">
-                  <span class="absolute left-[5px]">
+            <div className="nav-bar-right flex items-center">
+              <ul className="flex items-center">
+                <li className="flex items-center relative search-bar">
+                  <span className="absolute left-[5px]">
                     <BsSearch />
                   </span>
                   <input type="search" placeholder="Search" />
-                  <span class="absolute right-[25px] flex my-auto">
+                  <span className="absolute right-[25px] flex my-auto">
                     <BsCommand />
                   </span>
                 </li>

@@ -22,7 +22,7 @@ const SidebarLeft = () => {
   };
 
   return (
-    <aside className="font-medium text-sm w-full flex-wrap md:w-2/12 bg-white border-r border-r-gray-200 rounded-l-2xl h-screen overflow-y-auto">
+    <aside className="font-medium text-sm w-full flex-wrap md:w-2/12 bg-white border-r border-r-gray-200 md:h-screen overflow-y-auto">
       <div className="m-6">
         <span className="flex ">
           <img
